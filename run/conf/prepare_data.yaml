@@ -3,9 +3,9 @@ hydra:
     name: prepare_data
     chdir: true
   run:
-    dir: ${data_dir}/${exp_name}
+    dir: ${data_dir}/${dataset_name}
   sweep:
-    dir: ${data_dir}/${exp_name}
+    dir: ${data_dir}/${dataset_name}
     subdir: run${hydra.job.num}
   callbacks:
     save_job_info:
@@ -17,7 +17,7 @@ defaults:
 
 data_dir: ${env.root_dir}/data
 output_dir: ~
-exp_name: debug
+dataset_name: debug
 stage: train
 n_folds: 5
 seed: 42
