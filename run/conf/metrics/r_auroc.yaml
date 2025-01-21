@@ -1,0 +1,8 @@
+# https://lightning.ai/docs/torchmetrics/stable/retrieval/auroc.html
+RetrievalAUROC:
+  empty_target_action: neg
+  ignore_index: ~
+  top_k: 5
+  max_fpr: ~
+  aggregation: mean
+  alias: r_auroc@5

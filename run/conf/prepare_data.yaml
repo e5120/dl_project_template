@@ -1,0 +1,24 @@
+hydra:
+  job:
+    name: prepare_data
+    chdir: true
+  run:
+    dir: ${data_dir}/${exp_name}
+  sweep:
+    dir: ${data_dir}/${exp_name}
+    subdir: run${hydra.job.num}
+  callbacks:
+    save_job_info:
+      _target_: hydra.experimental.callbacks.PickleJobInfoCallback
+
+defaults:
+  - _self_
+  - env: server
+
+data_dir: ${env.root_dir}/data
+output_dir: ~
+exp_name: debug
+stage: train
+n_folds: 5
+seed: 42
+debug: False

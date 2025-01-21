@@ -1,0 +1,45 @@
+# https://lightning.ai/docs/torchmetrics/stable/classification
+Accuracy:
+  task: binary
+  threshold: 0.5
+  num_classes: ~
+  average: micro
+  ignore_index: ~
+
+AUROC:
+  task: binary
+  thresholds: ~
+  num_classes: ~
+  average: macro
+  max_fpr: ~
+  ignore_index: ~
+
+AveragePrecision:
+  task: binary
+  thresholds: ~
+  num_classes: ~
+  average: macro
+  ignore_index: ~
+  alias: ap
+
+F1Score:
+  task: binary
+  threshold: 0.5
+  num_classes: ~
+  average: micro
+  ignore_index: ~
+  alias: f1
+
+Precision:
+  task: binary
+  threshold: 0.5
+  num_classes: ~
+  average: micro
+  ignore_index: ~
+
+Recall:
+  task: binary
+  threshold: 0.5
+  num_classes: ~
+  average: micro
+  ignore_index: ~

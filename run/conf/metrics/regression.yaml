@@ -1,0 +1,54 @@
+# https://lightning.ai/docs/torchmetrics/stable/regression
+MeanAbsoluteError:
+  # num_outputs: 1
+  alias: mae
+
+MeanSquaredError:
+  squared: True
+  # num_outputs: 1
+  alias: mse
+
+# MeanSquaredLogError:
+#   alias: msle
+
+# MeanAbsolutePercentageError:
+#   alias: mape
+
+# # 類似度系
+# KLDivergence:
+#   log_prob: False
+#   reduction: mean
+#   alias: kl_div
+
+# CosineSimilarity:
+#   reduction: mean
+#   alias: cos_sim
+
+# MinkowskiDistance:
+#   p: 2
+#   alias: minkowski
+
+# # 相関係数系
+# R2Score:
+#   adjusted: 0
+#   multioutput: uniform_average
+#   alias: r2
+
+# PearsonCorrCoef:
+#   num_outputs: 1
+#   alias: pcc
+
+# SpearmanCorrCoef:
+#   num_outputs: 1
+#   alias: scc
+
+# KendallRankCorrCoef:
+#   variant: b
+#   t_test: False
+#   alternative: two-sided
+#   num_outputs: 1
+#   alias: krcc
+
+# ConcordanceCorrCoef:
+#   num_outputs: 1
+#   alias: ccc

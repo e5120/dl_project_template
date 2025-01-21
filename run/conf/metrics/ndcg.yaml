@@ -1,0 +1,7 @@
+# https://lightning.ai/docs/torchmetrics/stable/retrieval/normalized_dcg.html
+RetrievalNormalizedDCG:
+  empty_target_action: neg
+  ignore_index: ~
+  top_k: 5
+  aggregation: mean
+  alias: ndcg@5

@@ -1,0 +1,20 @@
+# https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.ModelCheckpoint.html#lightning.pytorch.callbacks.ModelCheckpoint
+model_checkpoint:
+  # 独自定義
+  prefix: model  # filenameのprefix
+  digit: 3       # filenameのモデル精度の桁数
+  # もとのパラメータ
+  dirpath: ~
+  filename: ~
+  monitor: val_loss
+  mode: min
+  verbose: True
+  save_last: ~
+  save_top_k: 1
+  save_weights_only: True
+  auto_insert_metric_name: False
+  every_n_train_steps: ~
+  train_time_interval: ~
+  every_n_epochs: ~
+  save_on_train_epoch_end: ~
+  enable_version_counter: True

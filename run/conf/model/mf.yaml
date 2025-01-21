@@ -1,0 +1,6 @@
+name: "MatrixFactorization"
+kwargs: {
+  n_users: 7000,
+  n_items: 4000,
+  embedding_dim: 32,
+}

@@ -1,0 +1,5 @@
+# https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.Timer.html#lightning.pytorch.callbacks.Timer
+timer:
+  duration: 01:00:00:00  # 1 day
+  interval: epoch
+  verbose: False

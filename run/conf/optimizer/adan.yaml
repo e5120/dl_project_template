@@ -1,0 +1,7 @@
+name: Adan
+kwargs: {
+  lr: 0.001,
+  betas: [0.02, 0.08, 0.01],
+  eps: 1.0e-08,
+  weight_decay: 0.0,
+}
