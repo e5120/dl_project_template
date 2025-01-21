@@ -17,13 +17,13 @@ defaults:
   - dataset: rating_dataset
   - model: mf
   - optimizer: adam
-  - scheduler: constant
+  - scheduler: cosine_with_restart_warmup
   - callbacks:
     - early_stopping
     - model_checkpoint
     - learning_rate_monitor
     - model_summary
-    - swa
+    # - swa
     - timer
   - metrics:
     - regression
