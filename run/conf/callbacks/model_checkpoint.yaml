@@ -6,8 +6,8 @@ model_checkpoint:
   # もとのパラメータ
   dirpath: ~
   filename: ~
-  monitor: val_loss
-  mode: min
+  monitor: ~
+  mode: ~
   verbose: True
   save_last: ~
   save_top_k: 1

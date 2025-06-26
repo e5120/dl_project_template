@@ -5,7 +5,8 @@ import lightning as L
 
 
 _PARSE_BY_SEP_PATTERN = re.compile(r"[ _-]+")
-_PARSE_PATTERN = re.compile(r"[A-Za-z][^A-Z]+")
+# _PARSE_PATTERN = re.compile(r"[A-Za-z][^A-Z]+")
+_PARSE_PATTERN = re.compile(r"[A-Za-z]+")
 
 
 def _parse_words(string):
