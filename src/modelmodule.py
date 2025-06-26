@@ -24,9 +24,9 @@ class ModelModule(L.LightningModule):
     def training_step(self, batch, batch_idx):
         ret = self.calculate_loss(batch)
         self.log("loss", ret["loss"], on_step=True, on_epoch=False, prog_bar=True, sync_dist=True)
-        for param_group in self.trainer.optimizers[0].param_groups:
-            lr = param_group["lr"]
-        self.log("lr", lr, on_step=True, on_epoch=False, prog_bar=True, sync_dist=True)
+        # for param_group in self.trainer.optimizers[0].param_groups:
+        #     lr = param_group["lr"]
+        # self.log("lr", lr, on_step=True, on_epoch=False, prog_bar=True, sync_dist=True)
         return ret["loss"]
 
     def validation_step(self, batch, batch_idx):
