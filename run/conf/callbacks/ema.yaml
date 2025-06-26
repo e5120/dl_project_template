@@ -1,0 +1,4 @@
+exponential_moving_average:
+  decay: 0.99
+  device: ~
+  use_buffers: True
