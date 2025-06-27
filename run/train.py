@@ -31,7 +31,7 @@ def main(cfg):
         callbacks = build_callbacks(cfg.callbacks)
         trainer = L.Trainer(
             callbacks=callbacks,
-            logger=WandbLogger(project=cfg.project_name) if cfg.project_name else None,
+            logger=WandbLogger(name=cfg.exp_name, project=cfg.project_name) if cfg.project_name and cfg.exp_name != "dummy" else None,
             **cfg.trainer,
         )
         trainer.fit(modelmodule, datamodule)
